@@ -39,47 +39,25 @@
    background: linear-gradient(0deg, #ef5da8, #3877ee);
 }
 
-.button_right {
-   box-sizing: border-box;
-   position: absolute;
-   width: 50px;
-   height: 50px;
-   left: 470px;
-   top: 735px;
-   border: 1px solid rgba(66, 86, 122, 0.5);
-   border-radius: 50%;
-}
-
 .button_right:hover {
-   background-color: #cccccc;
+   background-color: #cccccc4f;
 }
 
 .button_left:hover {
-   background-color: #cccccc;
+   background-color: #cccccc4f;
 }
 
-.right_arrow {
+.button_right {
    position: absolute;
-   width: 12.5px;
-   height: 12.5px;
-   left: 485px;
-   top: 753.75px;
-   border-top: 2px solid #42567a;
-   border-right: 2px solid #42567a;
-   transform: rotate(45deg);
-   z-index: 1;
-}
-
-.left_arrow {
-   position: absolute;
-   width: 12.5px;
-   height: 12.5px;
-   left: 421.25px;
-   top: 753.75px;
-   border-top: 2px solid #42567a;
-   border-right: 2px solid #42567a;
-   transform: rotate(-135deg);
-   z-index: 1;
+   width: 25px;
+   height: 25px;
+   padding: 11.5px;
+   left: 470px;
+   top: 735px;
+   content: url(../img/arrow_right.svg);
+   cursor: pointer;
+   border: 1px solid rgba(66, 86, 122, 0.5);
+   border-radius: 50%;
 }
 
 .line_right {
@@ -103,23 +81,14 @@
 }
 
 .button_left {
-   box-sizing: border-box;
    position: absolute;
-   width: 50px;
-   height: 50px;
+   width: 25px;
+   height: 25px;
+   padding: 11.5px;
    left: 400px;
    top: 735px;
+   content: url(../img/arrow_left.svg);
+   cursor: pointer;
    border: 1px solid rgba(66, 86, 122, 0.5);
    border-radius: 50%;
 }
-
-/* .grid {
-   position: relative;
-   width: 70px;
-   height: 100px;
-   left: 331px;
-   top: 930px;    
-   overflow: hidden;
-   background-color: #ffffff;
-   
-} */
