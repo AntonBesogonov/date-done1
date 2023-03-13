@@ -12,12 +12,12 @@ export function Map() {
    const findObj = response.filter((obj: Obj): boolean => {
       return obj.id === filtered;
    });
-   
+
    useEffect(() => {
       let filtered = counter;
       if (filtered > 2 || filtered < 1) {
          filtered = 1;
-      } 
+      }
       setFiltered(filtered);
    });
 
