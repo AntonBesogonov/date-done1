@@ -12,7 +12,8 @@ export function Map() {
    const findObj = response.filter((obj: Obj): boolean => {
       return obj.id === filtered;
    });
-
+   
+//условия счетчика
    useEffect(() => {
       let filtered = counter;
       if (filtered > 2 || filtered < 1) {
