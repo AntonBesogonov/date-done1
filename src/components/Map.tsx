@@ -20,7 +20,7 @@ export function Map() {
          filtered = 1;
       }
       setFiltered(filtered);
-   });
+   },[counter]);
 
    return (
       <>
