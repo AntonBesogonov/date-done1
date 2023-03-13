@@ -16,11 +16,11 @@ export function Map() {
    //условия счетчика.
    useEffect(() => {
       let filtered = counter;
-      if (filtered > 2 || filtered < 1) {
-         filtered = 1;
+      if (filtered > number || filtered < 1) {
+         setCounter(1);
       }
-      setFiltered(filtered);
-   },[counter]);
+      setFiltered(filtered);   
+   }, [counter]);
 
    return (
       <>
