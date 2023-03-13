@@ -13,7 +13,7 @@ export function Map() {
       return obj.id === filtered;
    });
 
-   //условия счетчика.
+   //условия счетчика..
    useEffect(() => {
       let filtered = counter;
       if (filtered > 2 || filtered < 1) {
