@@ -7,9 +7,8 @@
   overflow: hidden;
   list-style: none;
   padding: 0;
-  z-index: 1;
   display: block;
-  width: 1420px;
+  width: 1435px;
   margin: 0 auto;
 }
 
@@ -70,7 +69,7 @@ element.style {
 .swiper-button-prev {
   position: absolute;
   top: 25%;
-  z-index: 10;
+  z-index: 4;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -87,6 +86,8 @@ element.style {
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 0px 0px 15px rgba(56, 119, 238, 0.1);
+  margin-left: 10px;
+  z-index: 6;
 }
 
 .swiper-button-next,
@@ -100,4 +101,5 @@ element.style {
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 0px 0px 15px rgba(56, 119, 238, 0.1);
+  margin-right: 10px;
 }
