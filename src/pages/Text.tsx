@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper';
+import { Navigation, FreeMode, Pagination } from 'swiper';
 import mySwiper from '../style/mySwiper.scss';
 import style from '../style/Text.module.scss';
 import { IData } from '../models/models';
 
-function Text( props : IData) {
+function Text(props: IData) {
    const { name, period, date_one, date_two, counter, year, description } =
       style;
    const {
@@ -34,8 +34,14 @@ function Text( props : IData) {
          </div>
          <div>
             <Swiper
+               slidesPerView={3}
+               spaceBetween={30}
                navigation={true}
-               modules={[Navigation]}
+               freeMode={true}
+               pagination={{
+                  clickable: true,
+               }}
+               modules={[FreeMode, Pagination, Navigation]}
                className={mySwiper}
             >
                <SwiperSlide>

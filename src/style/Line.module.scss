@@ -40,11 +40,11 @@
 }
 
 .button_right:hover {
-   background-color: #cccccc4f;
+   background-color: #ffffffff;
 }
 
 .button_left:hover {
-   background-color: #cccccc4f;
+   background-color: #ffffffff;
 }
 
 .button_right {
@@ -57,7 +57,7 @@
    content: url(../img/arrow_right-transformed.png);
    cursor: pointer;
    border: 1px solid rgba(66, 86, 122, 0.5);
-   
+
    border-radius: 50%;
 }
 
