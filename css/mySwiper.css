@@ -78,14 +78,26 @@ element.style {
 }
 
 .swiper-button-prev {
-  content: url(../img/prev.png);
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
+  padding: 11.5px;
+  content: url(../img/arrow_left.png);
+  cursor: pointer;
+  border: 1px solid rgba(66, 86, 122, 0.5);
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(56, 119, 238, 0.1);
 }
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev:after {
-  content: url(../img/next.png);
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
+  padding: 11.5px;
+  content: url(../img/arrow_right.png);
+  cursor: pointer;
+  border: 1px solid rgba(66, 86, 122, 0.5);
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(56, 119, 238, 0.1);
 }

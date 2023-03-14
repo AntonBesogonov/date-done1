@@ -4,6 +4,7 @@ import mySwiper from '../style/mySwiper.scss';
 import style from '../style/Text.module.scss';
 import { IData } from '../models/models';
 
+
 function Text(props: IData) {
    const { name, period, date_one, date_two, counter, year, description } =
       style;
