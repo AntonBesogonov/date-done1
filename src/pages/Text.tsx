@@ -3,6 +3,8 @@ import { Navigation, FreeMode, Pagination } from 'swiper';
 import mySwiper from '../style/mySwiper.scss';
 import style from '../style/Text.module.scss';
 import { IData } from '../models/models';
+import CountUp from 'react-countup';
+import { useEffect } from 'react';
 
 function Text(props: IData) {
    const {
@@ -32,17 +34,21 @@ function Text(props: IData) {
    } = props;
 
    return (
-      <div>
+      <>
+
          <div className={name}>Исторические даты</div>
          <div className={period}>
-            <div className={date_one}>{start}</div>
-            <div className={date_two}>{finish}</div>
+            <div className={date_one}><CountUp end={start} duration={3} separator="" start={1990}  /></div>            
+            <div className={date_two}><CountUp end={finish} duration={3} separator="" start={1990}  /></div>
          </div>
          <div className={counter}>
             {coun}/0{len}
          </div>
-         <div className={block_left}></div>
-         <div className={block_right}></div>
+         <div>
+            <div className={block_left}></div>
+            <div className={block_right}></div>
+         </div>
+
          <Swiper
             slidesPerView={3}
             spaceBetween={30}
@@ -71,7 +77,7 @@ function Text(props: IData) {
                <div className={description}>{descr3}</div>
             </SwiperSlide>
          </Swiper>
-      </div>
+      </>
    );
 }
 

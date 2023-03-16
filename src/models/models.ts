@@ -1,7 +1,7 @@
 export interface IData {
    len: number;
-   start: string;
-   finish: string;
+   start: number;
+   finish: number;
    coun: string;
    yaer: string;
    descr: string;
@@ -20,8 +20,8 @@ export interface Obj {
 
 export interface ToText {
    counter: string;
-   start: string;
-   finish: string;
+   start: number;
+   finish: number;
    yaer: string;
    description: string;
    yaer1: string;
