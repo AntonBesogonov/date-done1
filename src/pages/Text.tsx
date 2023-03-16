@@ -4,7 +4,6 @@ import mySwiper from '../style/mySwiper.scss';
 import style from '../style/Text.module.scss';
 import { IData } from '../models/models';
 import CountUp from 'react-countup';
-import { useEffect } from 'react';
 
 function Text(props: IData) {
    const {
@@ -35,7 +34,6 @@ function Text(props: IData) {
 
    return (
       <>
-
          <div className={name}>Исторические даты</div>
          <div className={period}>
             <div className={date_one}><CountUp end={start} duration={3} separator="" start={1990}  /></div>            
