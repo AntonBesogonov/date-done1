@@ -77,7 +77,7 @@
    position: absolute;
    background-color: #e5e5e5;
    width: 70px;
-   height: 120px;
+   height: 150px;
    top: 77%;
    left: 322px;
    z-index: 1;
@@ -86,8 +86,21 @@
    position: absolute;
    background-color: #e5e5e5;
    width: 70px;
-   height: 120px;
+   height: 150px;
    top: 77%;
    left: 1690px;
    z-index: 1;
+}
+
+.trans {
+   opacity: 1;
+   animation: ani 2s forwards;
+}
+@keyframes ani {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
 }

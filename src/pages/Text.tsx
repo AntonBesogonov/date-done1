@@ -16,6 +16,7 @@ function Text(props: IData) {
       description,
       block_left,
       block_right,
+      trans,
    } = style;
    const {
       len,
@@ -36,8 +37,12 @@ function Text(props: IData) {
       <>
          <div className={name}>Исторические даты</div>
          <div className={period}>
-            <div className={date_one}><CountUp end={start} duration={3} separator="" start={1990}  /></div>            
-            <div className={date_two}><CountUp end={finish} duration={3} separator="" start={1990}  /></div>
+            <div className={date_one}>
+               <CountUp end={start} duration={3} separator='' start={1990} />
+            </div>
+            <div className={date_two}>
+               <CountUp end={finish} duration={3} separator='' start={1990} />
+            </div>
          </div>
          <div className={counter}>
             {coun}/0{len}
@@ -59,20 +64,28 @@ function Text(props: IData) {
             className={mySwiper}
          >
             <SwiperSlide>
-               <div className={year}>{yaer}</div>
-               <div className={description}>{descr}</div>
+               <div className={trans}>
+                  <div className={year}>{yaer}</div>
+                  <div className={description}>{descr}</div>
+               </div>
             </SwiperSlide>
             <SwiperSlide>
-               <div className={year}>{yaer1}</div>
-               <div className={description}>{descr1}</div>
+               <div className={trans}>
+                  <div className={year}>{yaer1}</div>
+                  <div className={description}>{descr1}</div>
+               </div>
             </SwiperSlide>
             <SwiperSlide>
-               <div className={year}>{yaer2}</div>
-               <div className={description}>{descr2}</div>
+               <div className={trans}>
+                  <div className={year}>{yaer2}</div>
+                  <div className={description}>{descr2}</div>
+               </div>
             </SwiperSlide>
             <SwiperSlide>
-               <div className={year}>{yaer3}</div>
-               <div className={description}>{descr3}</div>
+               <div className={trans}>
+                  <div className={year}>{yaer3}</div>
+                  <div className={description}>{descr3}</div>
+               </div>
             </SwiperSlide>
          </Swiper>
       </>
