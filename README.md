@@ -1,4 +1,4 @@
-1. Открыть демо-проект по https://antonbesogonov.github.io/date-done1/
+1. Открыть демо-проект по ссылке https://antonbesogonov.github.io/date-done1/
 
 Или:
 
